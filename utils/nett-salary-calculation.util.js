@@ -46,8 +46,12 @@ export function calculateNetSalary2026(monthlySalary, age = "under65") {
 
   return {
     gross: monthlySalary,
+    annual,
     paye: Number(monthlyPAYE.toFixed(2)),
     uif: Number(uif.toFixed(2)),
     net: Number(net.toFixed(2)),
+    rebate,
+    taxBeforeRebate: Number(tax.toFixed(2)),
+    annualPAYE: Number(annualPAYE.toFixed(2)),
   };
 }
